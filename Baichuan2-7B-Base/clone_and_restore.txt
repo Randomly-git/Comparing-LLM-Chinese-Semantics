@@ -1,0 +1,11 @@
+git clone https://www.modelscope.cn/baichuan-inc/Baichuan2-7B-Base.git
+
+克隆后修复索引：
+cd /Baichuan2-7B-Base
+
+wget "https://www.modelscope.cn/api/v1/models/baichuan-inc/Baichuan2-7B-Base/repo?Revision=master&FilePath=pytorch_model.bin.index.json" -O pytorch_model.bin.index.json
+
+检查修复结果：
+ls -lh pytorch_model.bin.index.json
+
+head -n 5 pytorch_model.bin.index.json
